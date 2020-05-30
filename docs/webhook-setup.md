@@ -35,6 +35,6 @@ Merge-a-Bot needs to listen for branch changes in order to run merge policies. T
 
 ![hook trigger](images/hook-trigger.png?raw=true)
 
-6. In the Action step, for "URL" enter "https://something.io/webhook" and for HTTP headers enter "Authorization: Bearer {merge-a-bot-token}". This is the token generated in step 2, not the Azure DevOps PAT!
+6. In the Action step, for "URL" enter `https://something.io/webhook` and for HTTP headers enter `Authorization: Bearer {merge-a-bot-token}`. This is the token generated in step 2, not the Azure DevOps PAT!
 
 7. Click Test and Finish to complete.
