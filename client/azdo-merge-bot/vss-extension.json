@@ -40,11 +40,6 @@
             "path": "dist",
             "addressable": true,
             "packagePath": "dist"
-        },
-        {
-            "path": "node_modules/vss-web-extension-sdk/lib",
-            "addressable": true,
-            "packagePath": "lib"
         }
     ]
 }

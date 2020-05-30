@@ -7,9 +7,9 @@ Merge-a-Bot needs to listen for branch changes in order to run merge policies. T
    - Code (Read & Write)
    - Extension Data (Read & Write)
 
-    For more information about why this permissions are needed [visit the required permissions page.](.)
+    For more information about why these permissions are needed [visit the required permissions page.](.)
 
-2. Perform an HTTP POST to https://something.io/jwt with the PAT and save the response token.
+2. Perform an HTTP POST to https://something.io/jwt with the PAT and save the Merge-a-Bot token.
 
     PowerShell:
 
@@ -26,3 +26,15 @@ Merge-a-Bot needs to listen for branch changes in order to run merge policies. T
 3. Go to Project Settings > Service Hooks:
 
 ![service hooks](images/service-hooks.png?raw=true)
+
+4. Click on the Plus icon, look for the "Web Hooks" option, and click "Next":
+
+![new hook](images/new-hook.png?raw=true)
+
+5. For "Trigger on this type of event" select "Code Pushed" and click "Next".
+
+![hook trigger](images/hook-trigger.png?raw=true)
+
+6. In the Action step, for "URL" enter "https://something.io/webhook" and for HTTP headers enter "Authorization: Bearer <merge-a-bot-token>". This is the token generated in step 2, not the PAT!
+
+7. Click Test and Finish to complete.
