@@ -9,18 +9,18 @@ Merge-a-Bot needs to listen for branch changes in order to run merge policies. T
 
     For more information about why these permissions are needed [visit the required permissions page.](.)
 
-2. Perform an HTTP POST to https://something.io/jwt with the PAT and save the Merge-a-Bot token.
+2. Perform an HTTP POST to https://merge-a-bot.azurewebsites.net/jwt with the PAT and save the Merge-a-Bot token.
 
     PowerShell:
 
     ```ps
-    (Invoke-WebRequest -Uri "https://something.io/jwt" -Method "Post" -Body "some-personal-access-token").RawContent
+    (Invoke-WebRequest -Uri "https://merge-a-bot.azurewebsites.net/jwt" -Method "Post" -Body "some-personal-access-token").RawContent
     ```
 
     curl:
 
     ```bash
-    curl -d "some-personal-access-token" https://something.io/jwt
+    curl -d "some-personal-access-token" https://merge-a-bot.azurewebsites.net/jwt
     ```
 
 3. Go to Project Settings > Service Hooks:
@@ -35,6 +35,6 @@ Merge-a-Bot needs to listen for branch changes in order to run merge policies. T
 
 ![hook trigger](images/hook-trigger.png?raw=true)
 
-6. In the Action step, for "URL" enter `https://something.io/webhook` and for HTTP headers enter `Authorization: Bearer {merge-a-bot-token}`. This is the token generated in step 2, not the Azure DevOps PAT!
+6. In the Action step, for "URL" enter `https://merge-a-bot.azurewebsites.net/webhook` and for HTTP headers enter `Authorization: Bearer {merge-a-bot-token}`. This is the token generated in step 2, not the Azure DevOps PAT!
 
 7. Click Test and Finish to complete.
