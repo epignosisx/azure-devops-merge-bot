@@ -1,3 +1,4 @@
+using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -15,6 +16,7 @@ namespace MergeBot
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
+                .WriteTo.ApplicationInsights(TelemetryConverter.Traces)
                 .WriteTo.Async(c => c!.Console(formatter: new JsonFormatter()))
                 .CreateLogger();
 
