@@ -124,7 +124,6 @@ namespace MergeBot
                 var azDoClient = azDoClientFactory.Create(pat);
                 if (payload != null)
                 {
-                    logger.LogInformation("Received request for {RepositoryUrl}", payload.Resource.Repository.Url);
                     var organization = new Uri(payload.Resource.Repository.Url).Segments[1].TrimEnd('/');
                     var factoryContext = new MergePolicyRunnerFactoryContext(azDoClient, payload.Resource.Repository.Id, organization);
                     var runner = await runnerFactory.CreateAsync(factoryContext);

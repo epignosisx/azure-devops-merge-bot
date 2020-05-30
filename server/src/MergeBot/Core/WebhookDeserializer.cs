@@ -1,8 +1,6 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 
 namespace MergeBot
 {
@@ -15,6 +13,9 @@ namespace MergeBot
 
         public static async ValueTask<GitPushEventPayload?> DeserializeAsync(Stream stream)
         {
+            //for troubleshooting
+            //using var sr = new StreamReader(stream);
+            //string content = await sr.ReadToEndAsync();
             var payload = await JsonSerializer.DeserializeAsync<GitPushEventPayload>(stream, s_serializerOptions);
             if (payload.EventType == GitPushEventResource.EventType)
                 return payload;
