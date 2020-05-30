@@ -22,4 +22,8 @@ jobs:
     - name: Build
       run: dotnet build "server/MergeBot.sln" --configuration Release --no-restore
     - name: Test
-      run: dotnet test "server/MergeBot.sln" --no-restore --verbosity normal
+      run: dotnet test "server/MergeBot.sln" --no-restore
+    - name: Publish
+      run: dotnet publish "server/src/MergeBot.csproj" --configuration Release --output "dist"
+    - name: Debug
+      run: ls dist -la
