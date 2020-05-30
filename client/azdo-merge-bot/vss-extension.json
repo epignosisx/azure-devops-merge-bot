@@ -2,21 +2,43 @@
     "manifestVersion": 1,
     "id": "merge-a-bot",
     "publisher": "alex-h",
-    "version": "1.0.27",
+    "version": "1.0.29",
     "name": "merge-a-bot",
     "description": "Handles merging branches automatically based on defined policies like source -> target branch or release branches -> master",
     "public": false,
     "categories": ["Azure Repos"],
     "tags": ["code", "repo", "git", "branch", "merge"],
+    "screenshots": [
+        {
+            "path": "images/blank.png"
+        },
+        {
+            "path": "images/create.png"
+        },
+        {
+            "path": "images/table.png"
+        }
+    ],
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
+    "icons": {
+        "default": "images/icon-128-black.png"
+    },
     "content": {
         "details": {
           "path": "overview.md"
         }
+    },
+    "links": {
+        "learn": { "uri": "https://github.com/epignosisx/azure-devops-merge-bot" },
+        "support": { "uri": "https://github.com/epignosisx/azure-devops-merge-bot/issues" }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/epignosisx/azure-devops-merge-bot"
     },
     "contributions": [
         {
@@ -27,7 +49,11 @@
             ],
             "properties": {
                 "name": "Merge Policies",
-                "uri": "merge-policies-hub.html"
+                "uri": "merge-policies-hub.html",
+                "icon": {
+                    "light": "images/icon-128-black.png",
+                    "dark": "images/icon-128-white.png"
+                }
             }
         }
     ],
@@ -40,6 +66,11 @@
             "path": "dist",
             "addressable": true,
             "packagePath": "dist"
+        },
+        {
+            "path": "images",
+            "addressable": true,
+            "packagePath": "images"
         }
     ]
 }

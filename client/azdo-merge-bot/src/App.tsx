@@ -51,7 +51,9 @@ export const App: React.SFC = ({ children }) => {
                 {policies && policies.length === 0 && (
                     <ZeroData
                         primaryText="No policies defined yet"
-                        secondaryText="Create one to get started!"
+                        secondaryText={
+                            <span>Create one to get started! If this is the first time using Merge-a-Bot make sure to <a href="https://github.com/epignosisx/azure-devops-merge-bot/blob/master/docs/webhook-setup.md">set up the webhook.</a></span>
+                        }
                         actionText="Create New Policy"
                         actionType={ZeroDataActionType.ctaButton}
                         onActionClick={() => setIsPanelOpen(true)}
