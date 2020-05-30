@@ -22,10 +22,12 @@ export function createPolicy(strategy: string, repoId: string, source: string, t
         source = "release/*";
     }
     const context = SDK.getExtensionContext();
+    const org = SDK.getHost().name;
     return SDK.getAccessToken().then(token => {
         return SDK.getService<IExtensionDataService>(CommonServiceIds.ExtensionDataService).then(dataService => {
             return dataService.getExtensionDataManager(context.publisherId + "." + context.extensionId, token).then(mng => {
                 return mng.createDocument(getCollectionName(repoId), { strategy: strategy, repositoryId: repoId, source: source, target: target, createDate: new Date().toISOString() }).then(doc => {
+                    clearCache(org, repoId);
                     return doc;
                 });
             });
@@ -35,9 +37,11 @@ export function createPolicy(strategy: string, repoId: string, source: string, t
 
 export function deletePolicy(policy: Policy) {
     const context = SDK.getExtensionContext();
+    const org = SDK.getHost().name;
     return SDK.getAccessToken().then(token => {
         return SDK.getService<IExtensionDataService>(CommonServiceIds.ExtensionDataService).then(dataService => {
             return dataService.getExtensionDataManager(context.publisherId + "." + context.extensionId, token).then(mng => {
+                clearCache(org, policy.repositoryId);
                 return mng.deleteDocument(getCollectionName(policy.repositoryId), policy.id!);
             });
         });
@@ -72,4 +76,10 @@ function getCollectionName(repoId: string) {
 
 function getExtensionId(context: SDK.IExtensionContext) {
     return context.publisherId + "." + context.extensionId
+}
+
+function clearCache(org: string, repoId: string): Promise<Response> {
+    return fetch(`https://merge-a-bot.azurewebsites.net/policies?organization=${encodeURIComponent(org)}&repositoryId=${encodeURIComponent(repoId)}`, {
+        method: "DELETE"
+    });
 }
