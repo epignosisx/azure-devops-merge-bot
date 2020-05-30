@@ -13,5 +13,10 @@ First install the extension. Then, [follow these instructions to connect the Mer
 
 A new menu item "Merge Policies" will be available under "Repos". In this new hub you will manage your repos policies.
 
+![screenshot merge policies](https://github.com/epignosisx/azure-devops-merge-bot/blob/master/client/azdo-merge-bot/images/table.png?raw=1)
+
+![screenshot create policy](https://github.com/epignosisx/azure-devops-merge-bot/blob/master/client/azdo-merge-bot/images/table-create.png?raw=1)
+
+
 ## Contribute
 Have a feature request? Running into problems? Visit the project on [GitHub](https://github.com/epignosisx/azure-devops-merge-bot).
