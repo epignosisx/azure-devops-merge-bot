@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
+using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Text;
@@ -9,9 +10,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
@@ -76,6 +77,7 @@ namespace MergeBot
                 endpoints.MapGet("/", Home);
                 endpoints.MapPost("/jwt", JwtRoute);
                 endpoints.MapPost("/webhook", Webhook).RequireAuthorization();
+                endpoints.MapDelete("/policies", ClearPolicies);
             });
 
             async Task Home(HttpContext context)
@@ -142,6 +144,19 @@ namespace MergeBot
                     logger.LogError(new EventId(1, "UnhandledError"), ex, "Unhandled error");
                     context.Response.StatusCode = 200;
                 }
+            }
+
+            Task ClearPolicies(HttpContext context)
+            {
+                var org = context.Request.Query["organization"];
+                var repoId = context.Request.Query["repositoryId"];
+                if (string.IsNullOrEmpty(org) || string.IsNullOrEmpty(repoId))
+                {
+                    context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    return Task.CompletedTask;
+                }
+                runnerFactory.Clear(new MergePolicyRunnerFactoryContext(repoId, org));
+                return Task.CompletedTask;
             }
         }
     }
