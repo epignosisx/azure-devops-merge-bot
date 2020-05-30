@@ -7,7 +7,7 @@ Merge-a-Bot needs to listen for branch changes in order to run merge policies. T
    - Code (Read & Write)
    - Extension Data (Read & Write)
 
-    For more information about why these permissions are needed [visit the required permissions page.](.)
+    For more information about why these permissions are needed [visit the required permissions page.](https://github.com/epignosisx/azure-devops-merge-bot/blob/master/docs/pat-permissions.md)
 
     Note, if pull requests have Required Reviewers, then Merge-a-Bot will not be able to automatically merge pull requests that succeed (pass all the checks). This can be fixed if the user behind the PAT has the permission to "Bypass policies when completing pull requests" for all the repos or the specific repos that will use the extension:
 
