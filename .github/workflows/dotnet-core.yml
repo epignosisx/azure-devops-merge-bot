@@ -24,6 +24,6 @@ jobs:
     - name: Test
       run: dotnet test "server/MergeBot.sln" --no-restore
     - name: Publish
-      run: dotnet publish "server/src/MergeBot.csproj" --configuration Release --output "dist"
+      run: dotnet publish "server/src/MergeBot/MergeBot.csproj" --configuration Release --output "dist"
     - name: Debug
       run: ls dist -la
