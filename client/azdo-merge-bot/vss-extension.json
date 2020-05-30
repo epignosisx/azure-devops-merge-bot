@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "merge-a-bot",
     "publisher": "alex-h",
-    "version": "1.0.26",
+    "version": "1.0.27",
     "name": "merge-a-bot",
     "description": "Handles merging branches automatically based on defined policies like source -> target branch or release branches -> master",
     "public": false,

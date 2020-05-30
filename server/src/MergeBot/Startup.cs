@@ -58,6 +58,10 @@ namespace MergeBot
                 });
 
             services.AddAuthorization();
+
+            services.AddCors(opts => {
+                opts.AddDefaultPolicy(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -70,6 +74,7 @@ namespace MergeBot
             app.UseSerilogRequestLogging();
             app.Use(ExceptionHandler);
             app.UseRouting();
+            app.UseCors();
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
