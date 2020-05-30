@@ -29,3 +29,4 @@ jobs:
       with: 
         app-name: merge-a-bot
         publish-profile: ${{ secrets.AZ_WEBAPP_PUBLISH_PROFILE }}
+        package: dist

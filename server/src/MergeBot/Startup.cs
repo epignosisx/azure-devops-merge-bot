@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 
 namespace MergeBot
 {
@@ -65,15 +66,22 @@ namespace MergeBot
             IAzureDevOpsClientFactory azDoClientFactory,
             ILogger<Startup> logger)
         {
+            app.UseSerilogRequestLogging();
             app.Use(ExceptionHandler);
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapGet("/", Home);
                 endpoints.MapPost("/jwt", JwtRoute);
                 endpoints.MapPost("/webhook", Webhook).RequireAuthorization();
             });
+
+            async Task Home(HttpContext context)
+            {
+                await context.Response.WriteAsync("Merge-a-Bot");
+            }
 
             async Task JwtRoute(HttpContext context)
             {
