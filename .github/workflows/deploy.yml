@@ -1,0 +1,31 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Install dependencies
+      run: dotnet restore "server/MergeBot.sln"
+    - name: Build
+      run: dotnet build "server/MergeBot.sln" --configuration Release --no-restore
+    - name: Test
+      run: dotnet test "server/MergeBot.sln" --no-restore
+    - name: Publish
+      run: dotnet publish "server/src/MergeBot/MergeBot.csproj" --configuration Release --output "dist"
+    - name: 'Run Azure webapp deploy action using publish profile credentials'
+      uses: azure/webapps-deploy@v2
+      with: 
+        app-name: merge-a-bot
+        publish-profile: ${{ secrets.AZ_WEBAPP_PUBLISH_PROFILE }}
