@@ -1,0 +1,28 @@
+@import "node_modules/azure-devops-ui/Core/_platformCommon.scss";
+
+#root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.mb-page {
+    width: 100%;
+}
+
+.mb-policy-desc {
+    margin-left: 29px;
+    font-size: $fontSizeS;
+}
+
+.mb-mt-4 {
+    margin-top: $spacing-4;
+}
+
+.mb-mt-8 {
+    margin-top: $spacing-8;
+}
+
+.mb-mt-16 {
+    margin-top: $spacing-16;
+}

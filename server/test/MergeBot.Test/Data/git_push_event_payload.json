@@ -1,0 +1,105 @@
+﻿{
+    "id": "af149164-c26a-4d15-8a8f-42180eac7642",
+    "eventType": "git.push",
+    "publisherId": "tfs",
+    "message": {
+        "text": "Alex pushed updates to Automerge:release/1.0\r\n(https://dev.azure.com/epignosisx/Automerge/_git/Automerge/#version=GBrelease%2F1.0)",
+        "html": "Alex pushed updates to <a href=\"https://dev.azure.com/epignosisx/Automerge/_git/Automerge/\">Automerge</a>:<a href=\"https://dev.azure.com/epignosisx/Automerge/_git/Automerge/#version=GBrelease%2F1.0\">release/1.0</a>",
+        "markdown": "Alex pushed updates to [Automerge](https://dev.azure.com/epignosisx/Automerge/_git/Automerge/):[release/1.0](https://dev.azure.com/epignosisx/Automerge/_git/Automerge/#version=GBrelease%2F1.0)"
+    },
+    "detailedMessage": {
+        "text": "Alex pushed a commit to Automerge:release/1.0\r\n - Updated README.md f3c0f71e (https://dev.azure.com/epignosisx/Automerge/_git/Automerge/commit/f3c0f71e9f14c13f535a497b4dd28e02db9eb33c)",
+        "html": "Alex pushed a commit to <a href=\"https://dev.azure.com/epignosisx/Automerge/_git/Automerge/\">Automerge</a>:<a href=\"https://dev.azure.com/epignosisx/Automerge/_git/Automerge/#version=GBrelease%2F1.0\">release/1.0</a>\r\n<ul>\r\n<li>Updated README.md <a href=\"https://dev.azure.com/epignosisx/Automerge/_git/Automerge/commit/f3c0f71e9f14c13f535a497b4dd28e02db9eb33c\">f3c0f71e</a></li>\r\n</ul>",
+        "markdown": "Alex pushed a commit to [Automerge](https://dev.azure.com/epignosisx/Automerge/_git/Automerge/):[release/1.0](https://dev.azure.com/epignosisx/Automerge/_git/Automerge/#version=GBrelease%2F1.0)\r\n* Updated README.md [f3c0f71e](https://dev.azure.com/epignosisx/Automerge/_git/Automerge/commit/f3c0f71e9f14c13f535a497b4dd28e02db9eb33c)"
+    },
+    "resource": {
+        "commits": [
+            {
+                "commitId": "f3c0f71e9f14c13f535a497b4dd28e02db9eb33c",
+                "author": {
+                    "name": "Alex",
+                    "email": "email@example.com",
+                    "date": "2020-05-20T18:10:58Z"
+                },
+                "committer": {
+                    "name": "Alex",
+                    "email": "email@example.com",
+                    "date": "2020-05-20T18:10:58Z"
+                },
+                "comment": "Updated README.md",
+                "url": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/f3c0f71e9f14c13f535a497b4dd28e02db9eb33c"
+            }
+        ],
+        "refUpdates": [
+            {
+                "name": "refs/heads/release/1.0",
+                "oldObjectId": "3f7f8256cffe3ea8687481de19dbfaf7ddad495e",
+                "newObjectId": "f3c0f71e9f14c13f535a497b4dd28e02db9eb33c"
+            }
+        ],
+        "repository": {
+            "id": "26ecc1ff-de36-44fc-9442-2f20ff38a937",
+            "name": "Automerge",
+            "url": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937",
+            "project": {
+                "id": "ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b",
+                "name": "Automerge",
+                "url": "https://dev.azure.com/epignosisx/_apis/projects/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b",
+                "state": "wellFormed",
+                "visibility": "unchanged",
+                "lastUpdateTime": "0001-01-01T00:00:00"
+            },
+            "defaultBranch": "refs/heads/master",
+            "remoteUrl": "https://dev.azure.com/epignosisx/Automerge/_git/Automerge"
+        },
+        "pushedBy": {
+            "displayName": "Alex",
+            "url": "https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05",
+            "_links": {
+                "avatar": {
+                    "href": "https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"
+                }
+            },
+            "id": "8d7f8309-632c-4c84-a191-266470842b05",
+            "uniqueName": "email@example.com",
+            "imageUrl": "https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05",
+            "descriptor": "msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"
+        },
+        "pushId": 12,
+        "date": "2020-05-20T18:10:58.4038535Z",
+        "url": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pushes/12",
+        "_links": {
+            "self": {
+                "href": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pushes/12"
+            },
+            "repository": {
+                "href": "https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937"
+            },
+            "commits": {
+                "href": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pushes/12/commits"
+            },
+            "pusher": {
+                "href": "https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05"
+            },
+            "refs": {
+                "href": "https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/release/1.0"
+            }
+        }
+    },
+    "resourceVersion": "1.0",
+    "resourceContainers": {
+        "collection": {
+            "id": "74f3a594-a01f-4cf0-a17c-1e8d6698af1c",
+            "baseUrl": "https://dev.azure.com/epignosisx/"
+        },
+        "account": {
+            "id": "51183ad8-8723-4fca-8ac9-644318b5ffd4",
+            "baseUrl": "https://dev.azure.com/epignosisx/"
+        },
+        "project": {
+            "id": "ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b",
+            "baseUrl": "https://dev.azure.com/epignosisx/"
+        }
+    },
+    "createdDate": "2020-05-20T18:11:05.409Z"
+}

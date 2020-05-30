@@ -1,0 +1,50 @@
+{
+    "manifestVersion": 1,
+    "id": "merge-a-bot",
+    "publisher": "alex-h",
+    "version": "1.0.26",
+    "name": "merge-a-bot",
+    "description": "Handles merging branches automatically based on defined policies like source -> target branch or release branches -> master",
+    "public": false,
+    "categories": ["Azure Repos"],
+    "tags": ["code", "repo", "git", "branch", "merge"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "content": {
+        "details": {
+          "path": "overview.md"
+        }
+    },
+    "contributions": [
+        {
+            "id": "merge-policies-hub",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-code-web.code-hub-group"
+            ],
+            "properties": {
+                "name": "Merge Policies",
+                "uri": "merge-policies-hub.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "merge-policies-hub.html",
+            "addressable": true
+        },
+        {
+            "path": "dist",
+            "addressable": true,
+            "packagePath": "dist"
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}

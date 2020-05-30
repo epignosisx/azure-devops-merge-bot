@@ -1,0 +1,452 @@
+version: VCR.net 1.0.0
+httpInteractions:
+- request:
+    uri: https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?api-version=5.1&filter=heads/
+    method: GET
+    headers:
+      Authorization:
+      - Basic OkludGVncmF0aW9u
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      P3P:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      Set-Cookie:
+      - VstsSession=%7B%22PersistentSessionId%22%3A%223ee86ba4-bc1c-461f-a514-72cb1f702f16%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D; domain=.dev.azure.com; expires=Sun, 25-May-2025 18:39:54 GMT; path=/; secure; HttpOnly
+      X-TFS-ProcessId:
+      - 79828327-42ae-4e2b-9a40-86245c2c6d1b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      ActivityId:
+      - 98b1a0d9-ea02-464b-a9e6-d074758f2f7e
+      X-TFS-Session:
+      - 98b1a0d9-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-E2EID:
+      - 98b1a0d9-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-UserData:
+      - 8d7f8309-632c-4c84-a191-266470842b05:email@example.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Request-Context:
+      - appId=cid-v1:f88d1338-e7ba-4d7b-83e0-e573c40a2f62
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Content-Type-Options:
+      - nosniff
+      X-MSEdge-Ref:
+      - 'Ref A: 6D1749EEFB8C468282ED1BDD9EB5CC79 Ref B: MIAEDGE1517 Ref C: 2020-05-26T18:39:54Z'
+      Date:
+      - Tue, 26 May 2020 18:39:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8; api-version=5.1
+      Expires:
+      - -1
+    body:
+      encoding: utf-8
+      string: |-
+        {"value":[{"name":"refs/heads/master","objectId":"6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee","creator":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?filter=heads%2Fmaster"},{"name":"refs/heads/release/1.0","objectId":"68e3574bdf92e29d57ee9ffbede1cd3f5d45c9ca","creator":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?filter=heads%2Frelease%2F1.0"},{"name":"refs/heads/release/1.1","objectId":"ee26888b75e1afc20b6508cfb86c46b49b5da8f2","creator":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?filter=heads%2Frelease%2F1.1"},{"name":"refs/heads/release/2.0","objectId":"cb9e90a3d4660a0e0dada7db2e549ca2aab08858","creator":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?filter=heads%2Frelease%2F2.0"}],"count":4}
+    httpVersion: 1.1
+- request:
+    uri: https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullrequests?api-version=5.1&searchCriteria.sourceRefName=refs%2Fheads%2Frelease%2F2.0&searchCriteria.targetRefName=refs%2Fheads%2Fmaster&searchCriteria.status=active
+    method: GET
+    headers:
+      Authorization:
+      - Basic OkludGVncmF0aW9u
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      P3P:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      Set-Cookie:
+      - VstsSession=%7B%22PersistentSessionId%22%3A%22a5027353-e36e-44c4-b4a1-d915097949d0%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D; domain=.dev.azure.com; expires=Sun, 25-May-2025 18:39:54 GMT; path=/; secure; HttpOnly
+      X-TFS-ProcessId:
+      - 79828327-42ae-4e2b-9a40-86245c2c6d1b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      ActivityId:
+      - 98b1a092-ea02-464b-a9e6-d074758f2f7e
+      X-TFS-Session:
+      - 98b1a092-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-E2EID:
+      - 98b1a092-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-UserData:
+      - 8d7f8309-632c-4c84-a191-266470842b05:email@example.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Request-Context:
+      - appId=cid-v1:f88d1338-e7ba-4d7b-83e0-e573c40a2f62
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Content-Type-Options:
+      - nosniff
+      X-MSEdge-Ref:
+      - 'Ref A: DD640CA4EE7F4021ACDDC0BE21FB3531 Ref B: MIAEDGE1517 Ref C: 2020-05-26T18:39:54Z'
+      Date:
+      - Tue, 26 May 2020 18:39:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8; api-version=5.1
+      Expires:
+      - -1
+    body:
+      encoding: utf-8
+      string: |-
+        {"value":[],"count":0}
+    httpVersion: 1.1
+- request:
+    uri: https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullrequests?api-version=5.1
+    method: POST
+    headers:
+      Authorization:
+      - Basic OkludGVncmF0aW9u
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: utf-8
+      string: |-
+        {"sourceRefName":"refs/heads/release/2.0","targetRefName":"refs/heads/master","title":"Automatic PR from release/2.0 to master","description":"Created by Automerge Bot"}
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      P3P:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      Set-Cookie:
+      - VstsSession=%7B%22PersistentSessionId%22%3A%2290f792b5-f6b0-4101-95f5-bb61547cfd68%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D; domain=.dev.azure.com; expires=Sun, 25-May-2025 18:39:54 GMT; path=/; secure; HttpOnly
+      X-TFS-ProcessId:
+      - 79828327-42ae-4e2b-9a40-86245c2c6d1b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      ActivityId:
+      - 98b1a15e-ea02-464b-a9e6-d074758f2f7e
+      X-TFS-Session:
+      - 98b1a15e-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-E2EID:
+      - 98b1a15e-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-UserData:
+      - 8d7f8309-632c-4c84-a191-266470842b05:email@example.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Request-Context:
+      - appId=cid-v1:f88d1338-e7ba-4d7b-83e0-e573c40a2f62
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Content-Type-Options:
+      - nosniff
+      X-MSEdge-Ref:
+      - 'Ref A: 3D908F7F46474E38A5BD374E53F3F627 Ref B: MIAEDGE1517 Ref C: 2020-05-26T18:39:54Z'
+      Date:
+      - Tue, 26 May 2020 18:39:54 GMT
+      Content-Length:
+      - 4327
+      Content-Type:
+      - application/json; charset=utf-8; api-version=5.1
+      Expires:
+      - -1
+    body:
+      encoding: utf-8
+      string: |-
+        {"repository":{"id":"26ecc1ff-de36-44fc-9442-2f20ff38a937","name":"Automerge","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937","project":{"id":"ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b","name":"Automerge","url":"https://dev.azure.com/epignosisx/_apis/projects/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b","state":"wellFormed","revision":28,"visibility":"private","lastUpdateTime":"2020-05-17T22:05:44.67Z"},"size":11399,"remoteUrl":"https://epignosisx@dev.azure.com/epignosisx/Automerge/_git/Automerge","sshUrl":"git@ssh.dev.azure.com:v3/epignosisx/Automerge/Automerge","webUrl":"https://dev.azure.com/epignosisx/Automerge/_git/Automerge"},"pullRequestId":18,"codeReviewId":18,"status":"active","createdBy":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"creationDate":"2020-05-26T18:39:54.6778882Z","title":"Automatic PR from release/2.0 to master","description":"Created by Automerge Bot","sourceRefName":"refs/heads/release/2.0","targetRefName":"refs/heads/master","mergeStatus":"queued","isDraft":false,"mergeId":"6cd75c4b-d822-4fb4-97f3-885543866b8e","lastMergeSourceCommit":{"commitId":"cb9e90a3d4660a0e0dada7db2e549ca2aab08858","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"},"lastMergeTargetCommit":{"commitId":"6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee"},"reviewers":[],"labels":[],"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18","_links":{"self":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18"},"repository":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937"},"workItems":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/workitems"},"sourceBranch":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/release/2.0"},"targetBranch":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/master"},"statuses":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/statuses"},"sourceCommit":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"},"targetCommit":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee"},"createdBy":{"href":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05"},"iterations":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/iterations"}},"supportsIterations":true,"artifactId":"vstfs:///Git/PullRequestId/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b%2f26ecc1ff-de36-44fc-9442-2f20ff38a937%2f18"}
+    httpVersion: 1.1
+- request:
+    uri: https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullrequests/18?api-version=5.1
+    method: GET
+    headers:
+      Authorization:
+      - Basic OkludGVncmF0aW9u
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      P3P:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      Set-Cookie:
+      - VstsSession=%7B%22PersistentSessionId%22%3A%2274702fc4-7bf7-49d0-bf37-d714e3e7b6c1%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D; domain=.dev.azure.com; expires=Sun, 25-May-2025 18:40:33 GMT; path=/; secure; HttpOnly
+      X-TFS-ProcessId:
+      - 79828327-42ae-4e2b-9a40-86245c2c6d1b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      ActivityId:
+      - 98b19be4-ea02-464b-a9e6-d074758f2f7e
+      X-TFS-Session:
+      - 98b19be4-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-E2EID:
+      - 98b19be4-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-UserData:
+      - 8d7f8309-632c-4c84-a191-266470842b05:email@example.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Request-Context:
+      - appId=cid-v1:f88d1338-e7ba-4d7b-83e0-e573c40a2f62
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Content-Type-Options:
+      - nosniff
+      X-MSEdge-Ref:
+      - 'Ref A: D3133E052F4B46BA9AC9C555F06E9A69 Ref B: MIAEDGE1517 Ref C: 2020-05-26T18:40:33Z'
+      Date:
+      - Tue, 26 May 2020 18:40:33 GMT
+      Content-Length:
+      - 4841
+      Content-Type:
+      - application/json; charset=utf-8; api-version=5.1
+      Expires:
+      - -1
+    body:
+      encoding: utf-8
+      string: |-
+        {"repository":{"id":"26ecc1ff-de36-44fc-9442-2f20ff38a937","name":"Automerge","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937","project":{"id":"ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b","name":"Automerge","url":"https://dev.azure.com/epignosisx/_apis/projects/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b","state":"wellFormed","revision":28,"visibility":"private","lastUpdateTime":"2020-05-17T22:05:44.67Z"},"size":11399,"remoteUrl":"https://epignosisx@dev.azure.com/epignosisx/Automerge/_git/Automerge","sshUrl":"git@ssh.dev.azure.com:v3/epignosisx/Automerge/Automerge","webUrl":"https://dev.azure.com/epignosisx/Automerge/_git/Automerge"},"pullRequestId":18,"codeReviewId":18,"status":"active","createdBy":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"creationDate":"2020-05-26T18:39:54.6778882Z","title":"Automatic PR from release/2.0 to master","description":"Created by Automerge Bot","sourceRefName":"refs/heads/release/2.0","targetRefName":"refs/heads/master","mergeStatus":"succeeded","isDraft":false,"mergeId":"6cd75c4b-d822-4fb4-97f3-885543866b8e","lastMergeSourceCommit":{"commitId":"cb9e90a3d4660a0e0dada7db2e549ca2aab08858","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"},"lastMergeTargetCommit":{"commitId":"6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee"},"lastMergeCommit":{"commitId":"75a074b2d7a01735648ae53048ebfda418a4f428","author":{"name":"Alex","email":"email@example.com","date":"2020-05-26T18:39:55Z"},"committer":{"name":"Alex","email":"email@example.com","date":"2020-05-26T18:39:55Z"},"comment":"Merge pull request 18 from release/2.0 into master","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/75a074b2d7a01735648ae53048ebfda418a4f428"},"reviewers":[],"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18","_links":{"self":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18"},"repository":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937"},"workItems":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/workitems"},"sourceBranch":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/release/2.0"},"targetBranch":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/master"},"statuses":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/statuses"},"sourceCommit":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"},"targetCommit":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee"},"createdBy":{"href":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05"},"iterations":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/iterations"}},"supportsIterations":true,"artifactId":"vstfs:///Git/PullRequestId/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b%2f26ecc1ff-de36-44fc-9442-2f20ff38a937%2f18"}
+    httpVersion: 1.1
+- request:
+    uri: https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullrequests/18?api-version=5.1
+    method: PATCH
+    headers:
+      Authorization:
+      - Basic OkludGVncmF0aW9u
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: utf-8
+      string: |-
+        {"repository":null,"pullRequestId":0,"codeReviewId":0,"status":"completed","creationDate":"0001-01-01T00:00:00+00:00","title":null,"description":null,"mergeStatus":null,"lastMergeSourceCommit":{"commitId":"cb9e90a3d4660a0e0dada7db2e549ca2aab08858","url":null}}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      P3P:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      Set-Cookie:
+      - VstsSession=%7B%22PersistentSessionId%22%3A%22acb9d6e9-9bf4-48b6-9e7c-bc53515d4129%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D; domain=.dev.azure.com; expires=Sun, 25-May-2025 18:40:33 GMT; path=/; secure; HttpOnly
+      X-TFS-ProcessId:
+      - 79828327-42ae-4e2b-9a40-86245c2c6d1b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      ActivityId:
+      - 98b19bd5-ea02-464b-a9e6-d074758f2f7e
+      X-TFS-Session:
+      - 98b19bd5-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-E2EID:
+      - 98b19bd5-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-UserData:
+      - 8d7f8309-632c-4c84-a191-266470842b05:email@example.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Request-Context:
+      - appId=cid-v1:f88d1338-e7ba-4d7b-83e0-e573c40a2f62
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Content-Type-Options:
+      - nosniff
+      X-MSEdge-Ref:
+      - 'Ref A: 937E87A9201D44B499000BCA312EA8B6 Ref B: MIAEDGE1517 Ref C: 2020-05-26T18:40:33Z'
+      Date:
+      - Tue, 26 May 2020 18:40:33 GMT
+      Content-Length:
+      - 5022
+      Content-Type:
+      - application/json; charset=utf-8; api-version=5.1
+      Expires:
+      - -1
+    body:
+      encoding: utf-8
+      string: |-
+        {"repository":{"id":"26ecc1ff-de36-44fc-9442-2f20ff38a937","name":"Automerge","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937","project":{"id":"ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b","name":"Automerge","url":"https://dev.azure.com/epignosisx/_apis/projects/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b","state":"wellFormed","revision":28,"visibility":"private","lastUpdateTime":"2020-05-17T22:05:44.67Z"},"size":11399,"remoteUrl":"https://epignosisx@dev.azure.com/epignosisx/Automerge/_git/Automerge","sshUrl":"git@ssh.dev.azure.com:v3/epignosisx/Automerge/Automerge","webUrl":"https://dev.azure.com/epignosisx/Automerge/_git/Automerge"},"pullRequestId":18,"codeReviewId":18,"status":"active","createdBy":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"creationDate":"2020-05-26T18:39:54.6778882Z","title":"Automatic PR from release/2.0 to master","description":"Created by Automerge Bot","sourceRefName":"refs/heads/release/2.0","targetRefName":"refs/heads/master","mergeStatus":"queued","isDraft":false,"mergeId":"6cd75c4b-d822-4fb4-97f3-885543866b8e","lastMergeSourceCommit":{"commitId":"cb9e90a3d4660a0e0dada7db2e549ca2aab08858","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"},"lastMergeTargetCommit":{"commitId":"6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee"},"reviewers":[],"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18","_links":{"self":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18"},"repository":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937"},"workItems":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/workitems"},"sourceBranch":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/release/2.0"},"targetBranch":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/master"},"statuses":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/statuses"},"sourceCommit":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"},"targetCommit":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/6d0db35fe4326af6a6c22e9d68fe07293b3bc4ee"},"createdBy":{"href":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05"},"iterations":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/18/iterations"}},"completionOptions":{"mergeStrategy":"noFastForward"},"supportsIterations":true,"completionQueueTime":"2020-05-26T18:40:33.7378644Z","closedBy":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"artifactId":"vstfs:///Git/PullRequestId/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b%2f26ecc1ff-de36-44fc-9442-2f20ff38a937%2f18"}
+    httpVersion: 1.1
+- request:
+    uri: https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?api-version=5.1&filter=heads/
+    method: GET
+    headers:
+      Authorization:
+      - Basic OkludGVncmF0aW9u
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      P3P:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      Set-Cookie:
+      - VstsSession=%7B%22PersistentSessionId%22%3A%225710ff77-6a9f-482e-8d1a-b81bedae8055%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D; domain=.dev.azure.com; expires=Sun, 25-May-2025 18:40:55 GMT; path=/; secure; HttpOnly
+      X-TFS-ProcessId:
+      - 79828327-42ae-4e2b-9a40-86245c2c6d1b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      ActivityId:
+      - 98b1fe36-ea02-464b-a9e6-d074758f2f7e
+      X-TFS-Session:
+      - 98b1fe36-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-E2EID:
+      - 98b1fe36-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-UserData:
+      - 8d7f8309-632c-4c84-a191-266470842b05:email@example.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Request-Context:
+      - appId=cid-v1:f88d1338-e7ba-4d7b-83e0-e573c40a2f62
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Content-Type-Options:
+      - nosniff
+      X-MSEdge-Ref:
+      - 'Ref A: EEC9702E26D945EE982608BA0D80D82D Ref B: MIAEDGE1517 Ref C: 2020-05-26T18:40:55Z'
+      Date:
+      - Tue, 26 May 2020 18:40:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8; api-version=5.1
+      Expires:
+      - -1
+    body:
+      encoding: utf-8
+      string: |-
+        {"value":[{"name":"refs/heads/master","objectId":"af332dfffc914b49b4c4b5a238c14c0e78a416a2","creator":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?filter=heads%2Fmaster"},{"name":"refs/heads/release/1.0","objectId":"68e3574bdf92e29d57ee9ffbede1cd3f5d45c9ca","creator":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?filter=heads%2Frelease%2F1.0"},{"name":"refs/heads/release/1.1","objectId":"ee26888b75e1afc20b6508cfb86c46b49b5da8f2","creator":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?filter=heads%2Frelease%2F1.1"},{"name":"refs/heads/release/2.0","objectId":"cb9e90a3d4660a0e0dada7db2e549ca2aab08858","creator":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs?filter=heads%2Frelease%2F2.0"}],"count":4}
+    httpVersion: 1.1
+- request:
+    uri: https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullrequests?api-version=5.1&searchCriteria.sourceRefName=refs%2Fheads%2Frelease%2F2.0&searchCriteria.targetRefName=refs%2Fheads%2Fmaster&searchCriteria.status=active
+    method: GET
+    headers:
+      Authorization:
+      - Basic OkludGVncmF0aW9u
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+      P3P:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      Set-Cookie:
+      - VstsSession=%7B%22PersistentSessionId%22%3A%22541dccf6-dc9e-476b-aed2-f265fbb1d146%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D; domain=.dev.azure.com; expires=Sun, 25-May-2025 18:40:55 GMT; path=/; secure; HttpOnly
+      X-TFS-ProcessId:
+      - 79828327-42ae-4e2b-9a40-86245c2c6d1b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      ActivityId:
+      - 98b1fe10-ea02-464b-a9e6-d074758f2f7e
+      X-TFS-Session:
+      - 98b1fe10-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-E2EID:
+      - 98b1fe10-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-UserData:
+      - 8d7f8309-632c-4c84-a191-266470842b05:email@example.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Request-Context:
+      - appId=cid-v1:f88d1338-e7ba-4d7b-83e0-e573c40a2f62
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Content-Type-Options:
+      - nosniff
+      X-MSEdge-Ref:
+      - 'Ref A: 8113FCB910004B7B8DC6469519766608 Ref B: MIAEDGE1517 Ref C: 2020-05-26T18:40:55Z'
+      Date:
+      - Tue, 26 May 2020 18:40:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8; api-version=5.1
+      Expires:
+      - -1
+    body:
+      encoding: utf-8
+      string: |-
+        {"value":[],"count":0}
+    httpVersion: 1.1
+- request:
+    uri: https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullrequests?api-version=5.1
+    method: POST
+    headers:
+      Authorization:
+      - Basic OkludGVncmF0aW9u
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: utf-8
+      string: |-
+        {"sourceRefName":"refs/heads/release/2.0","targetRefName":"refs/heads/master","title":"Automatic PR from release/2.0 to master","description":"Created by Automerge Bot"}
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      P3P:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      Set-Cookie:
+      - VstsSession=%7B%22PersistentSessionId%22%3A%229ab25ede-d837-41fd-ae8a-6a577be6861e%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D; domain=.dev.azure.com; expires=Sun, 25-May-2025 18:40:55 GMT; path=/; secure; HttpOnly
+      X-TFS-ProcessId:
+      - 79828327-42ae-4e2b-9a40-86245c2c6d1b
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      ActivityId:
+      - 98b1fefd-ea02-464b-a9e6-d074758f2f7e
+      X-TFS-Session:
+      - 98b1fefd-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-E2EID:
+      - 98b1fefd-ea02-464b-a9e6-d074758f2f7e
+      X-VSS-UserData:
+      - 8d7f8309-632c-4c84-a191-266470842b05:email@example.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Request-Context:
+      - appId=cid-v1:f88d1338-e7ba-4d7b-83e0-e573c40a2f62
+      Access-Control-Expose-Headers:
+      - Request-Context
+      X-Content-Type-Options:
+      - nosniff
+      X-MSEdge-Ref:
+      - 'Ref A: 8FD7BC0EC7B04E7688AB13D4BF9BCB99 Ref B: MIAEDGE1517 Ref C: 2020-05-26T18:40:55Z'
+      Date:
+      - Tue, 26 May 2020 18:40:55 GMT
+      Content-Length:
+      - 4327
+      Content-Type:
+      - application/json; charset=utf-8; api-version=5.1
+      Expires:
+      - -1
+    body:
+      encoding: utf-8
+      string: |-
+        {"repository":{"id":"26ecc1ff-de36-44fc-9442-2f20ff38a937","name":"Automerge","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937","project":{"id":"ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b","name":"Automerge","url":"https://dev.azure.com/epignosisx/_apis/projects/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b","state":"wellFormed","revision":28,"visibility":"private","lastUpdateTime":"2020-05-17T22:05:44.67Z"},"size":11399,"remoteUrl":"https://epignosisx@dev.azure.com/epignosisx/Automerge/_git/Automerge","sshUrl":"git@ssh.dev.azure.com:v3/epignosisx/Automerge/Automerge","webUrl":"https://dev.azure.com/epignosisx/Automerge/_git/Automerge"},"pullRequestId":19,"codeReviewId":19,"status":"active","createdBy":{"displayName":"Alex","url":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05","_links":{"avatar":{"href":"https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"}},"id":"8d7f8309-632c-4c84-a191-266470842b05","uniqueName":"email@example.com","imageUrl":"https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05","descriptor":"msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"},"creationDate":"2020-05-26T18:40:55.4282677Z","title":"Automatic PR from release/2.0 to master","description":"Created by Automerge Bot","sourceRefName":"refs/heads/release/2.0","targetRefName":"refs/heads/master","mergeStatus":"queued","isDraft":false,"mergeId":"0fed6e4f-693a-433a-8c63-2a621dbbcf3e","lastMergeSourceCommit":{"commitId":"cb9e90a3d4660a0e0dada7db2e549ca2aab08858","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"},"lastMergeTargetCommit":{"commitId":"af332dfffc914b49b4c4b5a238c14c0e78a416a2","url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/af332dfffc914b49b4c4b5a238c14c0e78a416a2"},"reviewers":[],"labels":[],"url":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/19","_links":{"self":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/19"},"repository":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937"},"workItems":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/19/workitems"},"sourceBranch":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/release/2.0"},"targetBranch":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/master"},"statuses":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/19/statuses"},"sourceCommit":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"},"targetCommit":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/af332dfffc914b49b4c4b5a238c14c0e78a416a2"},"createdBy":{"href":"https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05"},"iterations":{"href":"https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pullRequests/19/iterations"}},"supportsIterations":true,"artifactId":"vstfs:///Git/PullRequestId/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b%2f26ecc1ff-de36-44fc-9442-2f20ff38a937%2f19"}
+    httpVersion: 1.1

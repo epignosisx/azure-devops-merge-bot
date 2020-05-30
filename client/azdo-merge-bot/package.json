@@ -1,0 +1,37 @@
+{
+  "name": "azdo-merge-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "package": "tfx extension create",
+    "publish": "tfx extension publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-devops-extension-api": "1.157.0",
+    "azure-devops-extension-sdk": "2.0.11",
+    "azure-devops-ui": "2.166.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "vss-web-extension-sdk": "^5.141.0"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.35",
+    "@types/react-dom": "16.9.8",
+    "base64-inline-loader": "1.1.1",
+    "css-loader": "3.5.3",
+    "file-loader": "6.0.0",
+    "node-sass": "4.14.1",
+    "rimraf": "3.0.2",
+    "sass-loader": "8.0.2",
+    "style-loader": "1.2.1",
+    "ts-loader": "7.0.5",
+    "typescript": "3.9.3",
+    "webpack": "4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

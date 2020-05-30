@@ -1,0 +1,101 @@
+﻿{
+    "id": "cc679966-a115-459f-a0c3-2be38a2dd183",
+    "eventType": "git.push",
+    "publisherId": "tfs",
+    "message": {
+        "text": null
+    },
+    "detailedMessage": {
+        "text": null
+    },
+    "resource": {
+        "commits": [
+            {
+                "commitId": "cb9e90a3d4660a0e0dada7db2e549ca2aab08858",
+                "author": {
+                    "name": "Alex",
+                    "email": "email@example.com",
+                    "date": "2020-05-26T18:37:05Z"
+                },
+                "committer": {
+                    "name": "Alex",
+                    "email": "email@example.com",
+                    "date": "2020-05-26T18:37:05Z"
+                },
+                "comment": "Updated README.md",
+                "url": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/commits/cb9e90a3d4660a0e0dada7db2e549ca2aab08858"
+            }
+        ],
+        "refUpdates": [
+            {
+                "name": "refs/heads/release/2.0",
+                "oldObjectId": "04bcf88bceec9bc5ee318c180615585fae16205a",
+                "newObjectId": "cb9e90a3d4660a0e0dada7db2e549ca2aab08858"
+            }
+        ],
+        "repository": {
+            "id": "26ecc1ff-de36-44fc-9442-2f20ff38a937",
+            "name": "Automerge",
+            "url": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937",
+            "project": {
+                "id": "ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b",
+                "name": "Automerge",
+                "url": "https://dev.azure.com/epignosisx/_apis/projects/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b",
+                "state": "wellFormed",
+                "visibility": "unchanged",
+                "lastUpdateTime": "0001-01-01T00:00:00"
+            },
+            "defaultBranch": "refs/heads/master",
+            "remoteUrl": "https://dev.azure.com/epignosisx/Automerge/_git/Automerge"
+        },
+        "pushedBy": {
+            "displayName": "Alex",
+            "url": "https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05",
+            "_links": {
+                "avatar": {
+                    "href": "https://dev.azure.com/epignosisx/_apis/GraphProfile/MemberAvatars/msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"
+                }
+            },
+            "id": "8d7f8309-632c-4c84-a191-266470842b05",
+            "uniqueName": "email@example.com",
+            "imageUrl": "https://dev.azure.com/epignosisx/_api/_common/identityImage?id=8d7f8309-632c-4c84-a191-266470842b05",
+            "descriptor": "msa.ZTZlOTczZTctM2JlMC03MjUwLWJiNTQtZjI3YTc4MTkxYzU1"
+        },
+        "pushId": 86,
+        "date": "2020-05-26T18:37:06.1299999Z",
+        "url": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pushes/86",
+        "_links": {
+            "self": {
+                "href": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pushes/86"
+            },
+            "repository": {
+                "href": "https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937"
+            },
+            "commits": {
+                "href": "https://dev.azure.com/epignosisx/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/pushes/86/commits"
+            },
+            "pusher": {
+                "href": "https://spsprodcus2.vssps.visualstudio.com/A51183ad8-8723-4fca-8ac9-644318b5ffd4/_apis/Identities/8d7f8309-632c-4c84-a191-266470842b05"
+            },
+            "refs": {
+                "href": "https://dev.azure.com/epignosisx/ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b/_apis/git/repositories/26ecc1ff-de36-44fc-9442-2f20ff38a937/refs/heads/release/2.0"
+            }
+        }
+    },
+    "resourceVersion": "1.0",
+    "resourceContainers": {
+        "collection": {
+            "id": "74f3a594-a01f-4cf0-a17c-1e8d6698af1c",
+            "baseUrl": "https://dev.azure.com/epignosisx/"
+        },
+        "account": {
+            "id": "51183ad8-8723-4fca-8ac9-644318b5ffd4",
+            "baseUrl": "https://dev.azure.com/epignosisx/"
+        },
+        "project": {
+            "id": "ca47daa2-557a-4e8a-85e0-7f7a2d1cdf6b",
+            "baseUrl": "https://dev.azure.com/epignosisx/"
+        }
+    },
+    "createdDate": "2020-05-26T18:37:13.289Z"
+}

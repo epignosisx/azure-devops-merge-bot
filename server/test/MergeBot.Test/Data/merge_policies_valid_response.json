@@ -1,0 +1,14 @@
+{
+    "count": 1,
+    "value": [
+        {
+            "strategy": "ReleaseBranchCascadingPolicy",
+            "repositoryId": "26ecc1ff-de36-44fc-9442-2f20ff38a937",
+            "source": "release/*",
+            "target": "master",
+            "createDate": "2020-05-29T16:47:04.583Z",
+            "id": "b8f518dd-d25b-4a09-a27d-366b563b9afd",
+            "__etag": 1
+        }
+    ]
+}
