@@ -17,7 +17,7 @@ namespace MergeBot
             //using var sr = new StreamReader(stream);
             //string content = await sr.ReadToEndAsync();
             var payload = await JsonSerializer.DeserializeAsync<GitPushEventPayload>(stream, s_serializerOptions);
-            if (payload.EventType == GitPushEventResource.EventType)
+            if (payload.EventType == GitPushEventResource.EventType && payload.Resource?.RefUpdates != null && payload.Resource?.Repository != null)
                 return payload;
 
             return null;

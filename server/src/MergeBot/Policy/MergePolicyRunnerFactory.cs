@@ -86,7 +86,7 @@ namespace MergeBot
                 return NoopMergePolicyRunner.Instance;
 
             var policies = new List<MergePolicy>();
-            foreach (var policyConfig in policyConfiguration.Value)
+            foreach (var policyConfig in policyConfiguration.Value.OrderBy(n => n.CreateDate))
             {
                 var policyType = policyConfig.Strategy switch
                 {
