@@ -1,6 +1,6 @@
 # Personal Access Token Permissions
 
-The extension backend needs to interact with the Azure DevOps API once it is notified that branches changed. These are the pemissions needed:
+The extension's backend needs to interact with the Azure DevOps API once it is notified that branches changed. These are the pemissions needed:
 
 1. **Code (Read & Write)**. Needed in order to get branches, create pull requests, and merge pull requests.
 
