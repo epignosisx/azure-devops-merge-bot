@@ -13,7 +13,7 @@ Merge-a-Bot needs to listen for branch changes in order to run merge policies. T
 
     ![repo bypass policies](images/repo-bypass-policies.png?raw=1)
 
-2. Perform a HTTP POST to https://merge-a-bot.azurewebsites.net/jwt with the PAT and save the Merge-a-Bot token.
+2. Next, you will generate the Merge-a-Bot Auth token. Perform a HTTP POST to https://merge-a-bot.azurewebsites.net/jwt with the PAT and save the Merge-a-Bot token.
 
     PowerShell:
 
