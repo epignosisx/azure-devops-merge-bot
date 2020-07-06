@@ -128,10 +128,10 @@ namespace MergeBot
 
                 var payload = await WebhookDeserializer.DeserializeAsync(request.Body);
                 var pat = context.User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var azDoClient = azDoClientFactory.Create(pat);
                 if (payload != null)
                 {
-                    var organization = new Uri(payload.Resource.Repository.Url).Segments[1].TrimEnd('/');
+                    var azDoClient = azDoClientFactory.Create(pat);
+                    var organization = payload.Resource.Repository.GetOrganization();
                     var factoryContext = new MergePolicyRunnerFactoryContext(azDoClient, payload.Resource.Repository.Id, organization);
                     var runner = await runnerFactory.CreateAsync(factoryContext);
                     await runner.RunAsync(azDoClient, payload);

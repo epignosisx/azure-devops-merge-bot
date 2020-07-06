@@ -1,4 +1,5 @@
 ﻿#nullable disable
+using System;
 using System.Collections.Generic;
 
 namespace MergeBot
@@ -39,5 +40,16 @@ namespace MergeBot
         public string Id { get; set; }
         public string Name { get; set; }
         public string Url { get; set; }
+
+        public string GetOrganization()
+        {
+            var uri = new Uri(Url);
+            if (string.Equals(uri.Host, "dev.azure.com", StringComparison.OrdinalIgnoreCase))
+                return uri.Segments[1].TrimEnd('/');
+            else if (uri.Host.EndsWith("visualstudio.com", StringComparison.OrdinalIgnoreCase))
+                return uri.Host.Substring(0, uri.Host.IndexOf('.'));
+
+            throw new InvalidOperationException("Unknown url format: " + uri.ToString());
+        }
     }
 }
