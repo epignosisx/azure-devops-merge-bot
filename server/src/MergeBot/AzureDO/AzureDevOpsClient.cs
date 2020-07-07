@@ -73,6 +73,7 @@ namespace MergeBot
             var request = new HttpRequestMessage(HttpMethod.Get, url);
             request.Headers.Authorization = _authHeaderValue;
             using var response = await _httpClient.SendAsync(request);
+            //var content = response.Content.ReadAsStringAsync();
             response.EnsureSuccessStatusCode();
             using var stream = await response.Content.ReadAsStreamAsync();
             var data = await JsonSerializer.DeserializeAsync<T>(stream, s_serializerOptions);
@@ -87,7 +88,7 @@ namespace MergeBot
                 sourceRefName = source,
                 targetRefName = target,
                 title = $"Automatic PR from {source.Replace("refs/heads/", "")} to {target.Replace("refs/heads/", "")}",
-                description = "Created by Automerge Bot"
+                description = "Created by Merge-a-Bot"
             };
             var request = new HttpRequestMessage(HttpMethod.Post, url);
             request.Headers.Authorization = _authHeaderValue;
@@ -111,6 +112,9 @@ namespace MergeBot
                 Status = "completed",
                 LastMergeSourceCommit = new GitCommitRef { 
                     CommitId = lastMergeSourceCommit
+                },
+                CompletionOptions = new GitPullRequestCompletionOptions { 
+                    BypassPolicy = true
                 }
             };
             var json = JsonSerializer.Serialize(body, body.GetType(), s_serializerOptions);

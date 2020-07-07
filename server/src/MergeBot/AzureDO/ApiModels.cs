@@ -51,12 +51,19 @@ namespace MergeBot
         public string Description { get; set; }
         public string MergeStatus { get; set; }
         public GitCommitRef LastMergeSourceCommit { get; set; }
+        public GitPullRequestCompletionOptions CompletionOptions { get; set; }
     }
 
     public class GitCommitRef
     {
         public string CommitId { get; set; }
         public string Url { get; set; }
+    }
+
+    public class GitPullRequestCompletionOptions
+    {
+        public bool BypassPolicy { get; set; }
+        public string BypassReason { get; set; }
     }
 
     public class GitRepo

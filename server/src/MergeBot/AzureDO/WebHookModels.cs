@@ -1,6 +1,7 @@
 ﻿#nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace MergeBot
 {
@@ -40,6 +41,22 @@ namespace MergeBot
         public string Id { get; set; }
         public string Name { get; set; }
         public string Url { get; set; }
+
+        private string _normalizedUrl;
+        public string NormalizedUrl
+        {
+            get 
+            {
+                if (!string.IsNullOrEmpty(_normalizedUrl))
+                    return _normalizedUrl;
+
+                if (Url.StartsWith("https://dev.azure.com/"))
+                    return _normalizedUrl = Url;
+
+                _normalizedUrl = string.Format("https://dev.azure.com/{0}/_apis/git/repositories/{1}", GetOrganization(), Id);
+                return _normalizedUrl;
+            }
+        }
 
         public string GetOrganization()
         {
