@@ -75,8 +75,8 @@ export const CreateMergePolicyPanel: React.SFC<CreateMergePolicyPanelProps> = (p
                             
                             <RadioButton id={PolicyStrategy.cascadingRelease} text="Cascade release branches to a target branch" key="cascading-release" className="mb-mt-8" ariaDescribedBy="cascading-release-desc" />
                             <div className="mb-policy-desc" id="cascading-release-desc">
-                                <div>Changes to branches with the pattern release/* are merged to other release/* branches and finally to a default branch following <a href="https://semver.org/" target="_blank">SemVer 2.</a></div>
-                                <div className="mb-mt-4">Ex: A change to release/2.0 will be merged to release/2.1, then release/2.1 will be merged down to the default branch (master, develop, etc), but not to release/1.0</div>
+                                <div>Changes to branches with the pattern release/* are merged to other release/* branches and finally to a target branch following <a href="https://semver.org/" target="_blank">SemVer 2.</a></div>
+                                <div className="mb-mt-4">Ex: A change to release/2.0 will be merged to release/2.1, then release/2.1 will be merged down to the target branch (master, develop, etc), but not to release/1.0</div>
                             </div>
                         </RadioButtonGroup>
                     </FormItem>
@@ -111,14 +111,15 @@ export const CreateMergePolicyPanel: React.SFC<CreateMergePolicyPanelProps> = (p
                     )}
                     {strategy == PolicyStrategy.cascadingRelease && (
                         <FormItem 
-                            label="Default Branch" 
+                            label="Target Branch" 
                             error={targetBranchError}
-                            message={targetBranchError ? "Default branch is required" : undefined}
+                            message={targetBranchError ? "Target branch is required" : undefined}
                             className="mb-mt-16"
                         >
                             <TextField
                                 value={targetBranch}
                                 onChange={(e, newValue) => setTargetBranch(newValue)}
+                                placeholder="Ex: master"
                                 width={TextFieldWidth.standard}
                             />
                         </FormItem>
