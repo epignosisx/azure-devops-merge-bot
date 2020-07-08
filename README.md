@@ -1,5 +1,5 @@
 # azure-devops-merge-bot
-This Azure DevOps extension automates the merging of branches based on policies. 
+This [Azure DevOps extension](https://marketplace.visualstudio.com/items?itemName=alex-h.merge-a-bot) automates the merging of branches based on policies.
 
 Say, you want to merge every change that gets to `develop` to `master`: Merge-a-Bot will automate this process, by first creating a pull request, then monitoring the pull request until it is ready to merge and finally merging it.
 
