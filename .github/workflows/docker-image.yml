@@ -33,6 +33,7 @@ jobs:
       with:
         push: true # Will only build if this is not here
         file: server/src/MergeBot/Dockerfile
+        context: server/
         tags: |
           ghcr.io/${{  steps.get_repo.outputs.lowercase }}:${{ steps.get_version.outputs.VERSION }}
           ghcr.io/${{ steps.get_repo.outputs.lowercase }}:latest
