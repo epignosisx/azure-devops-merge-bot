@@ -16,6 +16,11 @@ jobs:
     - name: Get the tags version
       id: get_version
       run: echo ::set-output name=VERSION::${GITHUB_REF##*/}
+    - name: Get the repo name (lower case)
+      id: get_repo
+      uses: ASzc/change-string-case-action@v1
+      with:
+        string: ${{ github.repository }}
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v1
       with:
@@ -28,6 +33,5 @@ jobs:
       with:
         push: true # Will only build if this is not here
         tags: |
-          ghcr.io/${{ github.repository }}:${{ steps.get_version.outputs.VERSION }}
-          ghcr.io/${{ github.repository }}:latest
-    
+          ghcr.io/${{  steps.get_repo.outputs.lowercase }}:${{ steps.get_version.outputs.VERSION }}
+          ghcr.io/${{ steps.get_repo.outputs.lowercase }}:latest
