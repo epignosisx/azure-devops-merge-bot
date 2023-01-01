@@ -22,16 +22,16 @@
   "devDependencies": {
     "@types/react": "16.9.35",
     "@types/react-dom": "16.9.8",
-    "base64-inline-loader": "1.1.1",
-    "css-loader": "3.5.3",
+    "base64-inline-loader": "2.0.1",
+    "css-loader": "6.7.3",
     "file-loader": "6.0.0",
     "node-sass": "4.14.1",
     "rimraf": "3.0.2",
-    "sass-loader": "8.0.2",
+    "sass-loader": "13.2.0",
     "style-loader": "1.2.1",
-    "ts-loader": "7.0.5",
+    "ts-loader": "9.4.2",
     "typescript": "3.9.3",
-    "webpack": "4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack": "5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
